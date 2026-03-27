@@ -1,0 +1,167 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Noto Serif JP', 'Inter', serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main>section {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.hero-bg {
+    position: relative;
+    background-color: #f5eadd;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.menu-item-img,
+.product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.nav-link {
+    position: relative;
+    padding-bottom: 8px;
+    /* 下線のためのスペース */
+    transition: color 0.3s ease-in-out;
+    white-space: nowrap;
+    /* メニューが改行されないように */
+}
+
+.nav-link.active {
+    color: #FFFFFF;
+    /* White */
+    font-weight: bold;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #F97316;
+    /* Orange-600 */
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* --- Animation Styles --- */
+.content-section {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.content-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Product Frame Styles --- */
+.product-card-frame {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    /* Classic sharp frame */
+    padding: 10px;
+    /* The "matte" area */
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.1),
+        0 8px 24px rgba(0, 0, 0, 0.05);
+    /* Soft premium shadow */
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    will-change: transform;
+}
+
+.product-card-frame::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid #e5e7eb;
+    pointer-events: none;
+    transition: border-color 0.4s ease;
+}
+
+.product-card-frame:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.05),
+        0 20px 30px rgba(0, 0, 0, 0.1);
+    border-color: #fdba74;
+}
+
+.product-card-frame:hover::after {
+    border-color: #fed7aa;
+    /* Lighter orange for inner frame */
+}
+
+/* Ensure the image respects the frame padding */
+.product-card-frame img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    /* Fixed height for consistency */
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+/* Adjust the content container inside the frame */
+.product-card-content {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    text-align: center;
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="写真フォルダ/logo.png" type="image/png">
+    <title>ちんすこう専門店</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="arakaki.css">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-gray-800 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="#" class="p-2 page-link" data-target="home" aria-label="Home">
+                            <img src="写真フォルダ/logo.png" alt="ロゴ" class="h-10 w-10 rounded-full">
+                        </a>
+                    </div>
+                    <!-- Navigation Menu (Desktop) -->
+                    <nav class="hidden md:flex items-center space-x-6 ml-6">
+                        <a href="#" class="nav-link text-lg text-gray-300 hover:text-white page-link active"
+                            data-target="home">ホーム</a>
+                        <a href="#" class="nav-link text-lg text-gray-300 hover:text-white page-link"
+                            data-target="concept">当店について</a>
+                        <a href="#" class="nav-link text-lg text-gray-300 hover:text-white page-link"
+                            data-target="menu">商品一覧</a>
+                        <a href="#" class="nav-link text-lg text-gray-300 hover:text-white page-link"
+                            data-target="stores">店舗情報</a>
+                        <a href="#" class="nav-link text-lg text-gray-300 hover:text-white page-link"
+                            data-target="news">最新情報</a>
+                        <a href="#" class="nav-link text-lg text-gray-300 hover:text-white page-link"
+                            data-target="contact">お問い合わせ</a>
+                    </nav>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" id="mobile-menu-button"
+                        class="text-gray-300 hover:text-white focus:outline-none p-2" aria-label="Menu">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Overlay) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-gray-700">
+            <div class="px-4 py-6 space-y-4">
+                <a href="#" class="block text-xl text-gray-300 hover:text-white page-link active"
+                    data-target="home">ホーム</a>
+                <a href="#" class="block text-xl text-gray-300 hover:text-white page-link"
+                    data-target="concept">当店について</a>
+                <a href="#" class="block text-xl text-gray-300 hover:text-white page-link"
+                    data-target="menu">商品一覧</a>
+                <a href="#" class="block text-xl text-gray-300 hover:text-white page-link"
+                    data-target="stores">店舗情報</a>
+                <a href="#" class="block text-xl text-gray-300 hover:text-white page-link"
+                    data-target="news">最新情報</a>
+                <a href="#" class="block text-xl text-gray-300 hover:text-white page-link"
+                    data-target="contact">お問い合わせ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="content-section active">
+            <div class="hero-bg h-[calc(100vh-5rem)] flex items-center justify-center text-white">
+                <div class="slideshow-container">
+                    <div class="slide active" style="background-image: url('ホームスライド用フォルダー/IMG_0729 (1).png')"></div>
+                    <div class="slide" style="background-image: url('ホームスライド用フォルダー/IMG_0731 (1).png')"></div>
+                    <div class="slide" style="background-image: url('ホームスライド用フォルダー/IMG_0732 (1).png')"></div>
+                    <div class="slide" style="background-image: url('ホームスライド用フォルダー/IMG_0733 (1).png')"></div>
+                    <div class="slide" style="background-image: url('ホームスライド用フォルダー/IMG_0735 (1).png')"></div>
+                </div>
+                <div class="text-center bg-black bg-opacity-50 p-8 rounded-lg relative z-10">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">心和むひとときを、沖縄から</h1>
+                    <p class="text-lg sm:text-xl md:text-2xl mb-8">伝統の味と新しい挑戦が織りなす、琉球菓子の宝石。</p>
+                </div>
+            </div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">ちんすこう専門店へようこそ</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
+                        当店は、琉球王朝時代から愛される伝統菓子「ちんすこう」を、心を込めてお届けしています。
+                        厳選された素材と職人の技で焼き上げる、サクッとした食感と上品な甘さ。
+                        どこか懐かししくも新しい味わいを、くつろぎの時間とともにお楽しみください。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Concept Section -->
+        <section id="concept" class="content-section py-12 sm:py-16" style="background-color: #f5eadd;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10 sm:mb-12">当店について</h2>
+                <div class="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
+                    <div>
+                        <img src="写真フォルダ/当店について.jpg" alt="こだわりの素材" class="shadow-lg w-full">
+                    </div>
+                    <div class="text-gray-700 leading-relaxed text-xl sm:text-3xl">
+                        <p>
+                            当店のホームページにお越しいただきありがとうございます。<br>
+                            大量生産ではなく心を込めて製造から袋詰めまで手作業で行っております。<br>
+                            先代からの技法を受け継ぎ、今までの金楚糕（ちんすこう）の歴史も尊重しつつ、<br>
+                            現代に受け入れられるように考慮しています。<br>
+                            当店のお菓子は子供でもたべやすい一口サイズで<br>
+                            可愛い花と月桃の葉の形をあしらっています。<br>
+                            また金楚糕の原点に戻ってオリジナルの菊型も販売しております。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="content-section py-12 sm:py-16" style="background-color: #f5eadd;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10 sm:mb-12">商品一覧</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Menu Item 1 -->
+                    <!-- Menu Item 1 -->
+                    <div class="product-card-frame flex flex-col h-full">
+                        <img src="DSCF2551.jpg" alt="紅芋ちんすこう">
+                        <div class="product-card-content flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-orange-600 mb-2">紅芋ちんすこう</h3>
+                            <p class="text-xl font-bold text-gray-800">1袋350円「税込」</p>
+                        </div>
+                    </div>
+                    <!-- Menu Item 2 -->
+                    <!-- Menu Item 2 -->
+                    <div class="product-card-frame flex flex-col h-full">
+                        <img src="DSCF2549.jpg" alt="月桃ちんすこう">
+                        <div class="product-card-content flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-orange-600 mb-2">月桃ちんすこう</h3>
+                            <p class="text-xl font-bold text-gray-800">1袋350円「税込」</p>
+                        </div>
+                    </div>
+                    <!-- Menu Item 3 -->
+                    <!-- Menu Item 3 -->
+                    <div class="product-card-frame flex flex-col h-full">
+                        <img src="DSCF2553.jpg" alt="塩ちんすこう">
+                        <div class="product-card-content flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-orange-600 mb-2">菊花糕<span
+                                    class="text-gray-800 text-sm ml-2">「商標登録」</span></h3>
+                            <p class="text-xl font-bold text-gray-800">1袋200円「税込」</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Set Items Sub-section -->
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mt-16 mb-10 sm:mb-12">セット商品</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Set Item 1 -->
+                    <div class="product-card-frame flex flex-col h-full">
+                        <img src="DSCF2502.jpg" alt="ちんすこう４袋">
+                        <div class="product-card-content flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">ちんすこう４袋</h3>
+                            <p class="text-lg font-bold text-gray-900">1,500円「税込」</p>
+                        </div>
+                    </div>
+                    <!-- Set Item 2 -->
+                    <div class="product-card-frame flex flex-col h-full">
+                        <img src="ホームスライド用フォルダー/IMG_0731 (1).png" alt="ちんすこう２袋　月桃茶セット">
+                        <div class="product-card-content flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">ちんすこう２袋　月桃茶セット</h3>
+                            <p class="text-lg font-bold text-gray-900">1,200円「税込」</p>
+                        </div>
+                    </div>
+                    <!-- Set Item 3 -->
+                    <div class="product-card-frame flex flex-col h-full">
+                        <img src="DSCF2520.jpg" alt="ちんすこう8袋">
+                        <div class="product-card-content flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">ちんすこう8袋</h3>
+                            <p class="text-lg font-bold text-gray-900">2,800円「税込」</p>
+                        </div>
+                    </div>
+                    <!-- Set Item 4 -->
+                    <div class="product-card-frame flex flex-col h-full">
+                        <img src="DSCF2524.jpg" alt="月桃茶ちんすこう6袋">
+                        <div class="product-card-content flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">月桃茶ちんすこう6袋</h3>
+                            <p class="text-lg font-bold text-gray-900">2,550円「税込」</p>
+                        </div>
+                    </div>
+                    <!-- Set Item 5 -->
+                    <div class="product-card-frame flex flex-col h-full">
+                        <img src="DSCF2544.jpg" alt="ちんすこう菊型セット">
+                        <div class="product-card-content flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">ちんすこう菊型セット</h3>
+                            <p class="text-lg font-bold text-gray-900">1400円「税込」</p>
+                        </div>
+                    </div>
+                    <!-- Set Item 6 -->
+                    <div class="product-card-frame flex flex-col h-full">
+                        <img src="DSCF2541.jpg" alt="菊型セット">
+                        <div class="product-card-content flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">菊型セット</h3>
+                            <p class="text-lg font-bold text-gray-900">1300円「税込」</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- その他 Sub-section -->
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mt-16 mb-10 sm:mb-12">その他</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Other Item 1 -->
+                    <div class="product-card-frame flex flex-col h-full">
+                        <img src="DSCF2554.jpg" alt="月桃茶">
+                        <div class="product-card-content flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">月桃茶</h3>
+                            <p class="text-lg font-bold text-gray-900">400円「税込」</p>
+                        </div>
+                    </div>
+                    <!-- Other Item 2 -->
+                    <div class="product-card-frame flex flex-col h-full">
+                        <img src="IMG_0775.png" alt="その他商品2">
+                        <div class="product-card-content flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">シャツ</h3>
+                            <p class="text-lg font-bold text-gray-900">2800円「税込」</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section id="stores" class="content-section py-12 sm:py-16" style="background-color: #f5eadd;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10 sm:mb-12">店舗情報</h2>
+
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 shadow-md">
+                        <h3 class="text-2xl font-semibold text-orange-600 mb-3">国際通り牧志店</h3>
+                        <div class="space-y-2 mb-4">
+                            <p><strong>住所:</strong> 〒900-0013 沖縄県那覇市牧志1丁目3-68</p>
+                            <p><strong>電話:</strong> 098-867-2949</p>
+                            <p><strong>営業時間:</strong> 10:30~18:30</p>
+                            <p><strong>定休日:</strong> 火・水曜日</p>
+                        </div>
+                        <img src="IMG_0764.png" alt="国際通り牧志店の外観" class="w-full mt-4">
+                    </div>
+                    <div class="bg-white p-6 shadow-md">
+                        <h3 class="text-2xl font-semibold text-orange-600 mb-3">国際通り松尾店</h3>
+                        <div class="space-y-2 mb-4">
+                            <p><strong>住所:</strong> 沖縄県那覇市松尾１丁目２−３−１</p><br><br>
+                            <p>製造場となり販売はしておりません。お買い求めは左記の牧志店へお越しください</p>
+                        </div>
+                        <img src="写真フォルダ/IMG_0713.png" alt="国際通り松尾店の外観" class="w-full mt-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="news" class="content-section py-12 sm:py-16" style="background-color: #f5eadd;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10 sm:mb-12">最新情報</h2>
+                <div class="space-y-8 max-w-3xl mx-auto">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <p class="text-sm text-gray-500 mb-1">2024年10月27日</p>
+                        <h3 class="text-xl font-semibold text-orange-600 mb-2">ウェブサイトできました</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="content-section py-12 sm:py-16" style="background-color: #f5eadd;">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-10 sm:mb-12">お問い合わせ</h2>
+                <div class="max-w-2xl mx-auto text-center bg-white p-8 shadow-md">
+                    <p class="text-gray-700 mb-8 text-lg">
+                        商品に関するご質問商品の注文や店舗へのご意見などがございましたら、
+                        以下のフォームよりお気軽にお問い合わせください。
+                    </p>
+                    <form id="contact-form" action="#" method="POST" class="text-left max-w-lg mx-auto space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-bold mb-2">お名前</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-orange-500 transition-colors duration-300 bg-white"
+                                placeholder="お名前を入力してください">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-bold mb-2">メールアドレス</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-orange-500 transition-colors duration-300 bg-white"
+                                placeholder="メールアドレスを入力してください">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-bold mb-2">お問い合わせ内容</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-orange-500 transition-colors duration-300 bg-white"
+                                placeholder="お問い合わせ内容を入力してください"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit"
+                                class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-12 shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
+                                送信する
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-4">
+                <a href="#" class="text-xl font-bold text-white hover:text-orange-400 page-link"
+                    data-target="home">ちんすこう専門店</a>
+            </div>
+            <nav class="flex flex-wrap justify-center space-x-4 sm:space-x-6 mb-6">
+                <a href="#" class="hover:text-orange-400 page-link" data-target="home">ホーム</a>
+                <a href="#" class="hover:text-orange-400 page-link" data-target="concept">当店について</a>
+                <a href="#" class="hover:text-orange-400 page-link" data-target="menu">商品一覧</a>
+                <a href="#" class="hover:text-orange-400 page-link" data-target="stores">店舗情報</a>
+                <a href="#" class="hover:text-orange-400 page-link" data-target="news">最新情報</a>
+                <a href="#" class="hover:text-orange-400 page-link" data-target="contact">お問い合わせ</a>
+            </nav>
+            <p class="text-sm mt-8">&copy; 2025 ちんすこう専門店. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="arakaki.js"></script>
+</body>
+
+</html>
