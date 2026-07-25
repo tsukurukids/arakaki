@@ -119,7 +119,8 @@
                 <!-- 歴史紹介画像枠（画像がない場合は枠線プレースホルダーを表示） -->
                 <div class="max-w-4xl mx-auto mb-12 scroll-reveal">
                     <div class="relative w-full aspect-[2.5/1] rounded-lg overflow-hidden">
-                        <img src="photos/IMG_0823.jpeg" alt="ちんすこうの歴史" class="absolute inset-0 w-full h-full object-cover">
+                        <img src="photos/IMG_0823.jpeg" alt="ちんすこうの歴史" class="absolute inset-0 w-full h-full object-cover"
+                            onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='IMG_0823.jpeg';}else if(this.dataset.tried==1){this.dataset.tried=2;this.src='photos/IMG_0823.jpg';}else if(this.dataset.tried==2){this.dataset.tried=3;this.src='IMG_0823.jpg';}else{this.style.display='none'; this.nextElementSibling.style.display='flex';}">
                         <!-- プレースホルダー枠 -->
                         <div class="hidden absolute inset-0 w-full h-full border-2 border-dashed border-gray-400 bg-gray-50 flex-col items-center justify-center text-gray-500 p-4 rounded-lg">
                             <svg class="w-12 h-12 mb-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
