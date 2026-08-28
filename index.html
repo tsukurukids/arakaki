@@ -83,11 +83,11 @@
         <section id="home" class="content-section active">
             <div class="hero-bg h-[calc(100vh-5rem)] flex items-center justify-center text-white">
                 <div class="slideshow-container">
-                    <div class="slide active" style="background-image: url('home_slides/IMG_0729%20(1).png')"></div>
-                    <div class="slide" style="background-image: url('home_slides/IMG_0731%20(1).png')"></div>
-                    <div class="slide" style="background-image: url('home_slides/IMG_0732%20(1).png')"></div>
-                    <div class="slide" style="background-image: url('home_slides/IMG_0733%20(1).png')"></div>
-                    <div class="slide" style="background-image: url('home_slides/IMG_0735%20(1).png')"></div>
+                    <div class="slide active" style="background-image: url('images/slides/IMG_0729%20(1).png')"></div>
+                    <div class="slide" style="background-image: url('images/slides/IMG_0731%20(1).png')"></div>
+                    <div class="slide" style="background-image: url('images/slides/IMG_0732%20(1).png')"></div>
+                    <div class="slide" style="background-image: url('images/slides/IMG_0733%20(1).png')"></div>
+                    <div class="slide" style="background-image: url('images/slides/IMG_0735%20(1).png')"></div>
                 </div>
                 <div class="text-center bg-black bg-opacity-50 p-8 rounded-lg relative z-10">
                     <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">心和むひとときを沖縄から</h1>
@@ -119,8 +119,7 @@
                 <!-- 歴史紹介画像枠（画像がない場合は枠線プレースホルダーを表示） -->
                 <div class="max-w-4xl mx-auto mb-12 scroll-reveal">
                     <div class="relative w-full aspect-[2.5/1] rounded-lg overflow-hidden">
-                        <img src="photos/IMG_0823.jpeg" alt="ちんすこうの歴史" class="absolute inset-0 w-full h-full object-cover"
-                            onerror="if(!this.dataset.tried){this.dataset.tried=1;this.src='IMG_0823.jpeg';}else{this.style.display='none'; this.nextElementSibling.style.display='flex';}">
+                        <img src="images/IMG_0823.jpeg" alt="ちんすこうの歴史" class="absolute inset-0 w-full h-full object-cover">
                         <!-- プレースホルダー枠 -->
                         <div class="hidden absolute inset-0 w-full h-full border-2 border-dashed border-gray-400 bg-gray-50 flex-col items-center justify-center text-gray-500 p-4 rounded-lg">
                             <svg class="w-12 h-12 mb-3 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -135,7 +134,7 @@
 
                     <div class="flex flex-col md:flex-row items-center gap-8 mt-4 scroll-reveal">
                         <div class="md:w-1/2 flex justify-center">
-                            <img src="photos/about_us.jpg" alt="当店について" class="w-full h-auto rounded-lg shadow-lg" />
+                            <img src="images/about_us.jpg" alt="当店について" class="w-full h-auto rounded-lg shadow-lg" />
                         </div>
                         <div class="md:w-1/2">
                             <p class="text-lg text-gray-700 leading-relaxed">
@@ -163,8 +162,8 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 scroll-reveal delay-100">
                     <!-- Menu Item 1 -->
                     <!-- Menu Item 1 -->
-                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('DSCF2551.jpg', '紅芋ちんすこう', '1袋350円（税込）', '')">
-                        <img src="DSCF2551.jpg" alt="紅芋ちんすこう">
+                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('images/products/DSCF2551.jpg', '紅芋ちんすこう', '1袋350円（税込）', '')">
+                        <img src="images/products/DSCF2551.jpg" alt="紅芋ちんすこう">
                         <div class="product-card-content flex flex-col flex-grow">
                             <h3 class="text-2xl font-semibold text-orange-600 mb-2">紅芋ちんすこう</h3>
                             <p class="text-xl font-bold text-gray-800">1袋350円（税込）</p>
@@ -172,8 +171,8 @@
                     </div>
                     <!-- Menu Item 2 -->
                     <!-- Menu Item 2 -->
-                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('DSCF2549.jpg', '月桃ちんすこう', '1袋350円（税込）', '')">
-                        <img src="DSCF2549.jpg" alt="月桃ちんすこう">
+                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('images/products/DSCF2549.jpg', '月桃ちんすこう', '1袋350円（税込）', '')">
+                        <img src="images/products/DSCF2549.jpg" alt="月桃ちんすこう">
                         <div class="product-card-content flex flex-col flex-grow">
                             <h3 class="text-2xl font-semibold text-orange-600 mb-2">月桃ちんすこう</h3>
                             <p class="text-xl font-bold text-gray-800">1袋350円（税込）</p>
@@ -181,8 +180,8 @@
                     </div>
                     <!-- Menu Item 3 -->
                     <!-- Menu Item 3 -->
-                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('DSCF2553.jpg', '菊花糕', '', '商標登録')">
-                        <img src="DSCF2553.jpg" alt="塩ちんすこう">
+                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('images/products/DSCF2553.jpg', '菊花糕', '', '商標登録')">
+                        <img src="images/products/DSCF2553.jpg" alt="塩ちんすこう">
                         <div class="product-card-content flex flex-col flex-grow">
                             <h3 class="text-2xl font-semibold text-orange-600 mb-2">菊花糕<span
                                     class="text-gray-800 text-sm ml-2">「商標登録」</span></h3>
@@ -195,47 +194,47 @@
                 <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mt-16 mb-10 sm:mb-12 scroll-reveal">セット商品</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 scroll-reveal delay-100">
                     <!-- Set Item 1 -->
-                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('DSCF2502.jpg', 'ちんすこう４袋', '1,500円（税込）', '')">
-                        <img src="DSCF2502.jpg" alt="ちんすこう４袋">
+                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('images/products/DSCF2502.jpg', 'ちんすこう４袋', '1,500円（税込）', '')">
+                        <img src="images/products/DSCF2502.jpg" alt="ちんすこう４袋">
                         <div class="product-card-content flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">ちんすこう４袋</h3>
                             <p class="text-lg font-bold text-gray-900">1,500円（税込）</p>
                         </div>
                     </div>
                     <!-- Set Item 2 -->
-                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('home_slides/IMG_0731%20(1).png', 'ちんすこう２袋 月桃茶セット', '1,200円（税込）', '')">
-                        <img src="home_slides/IMG_0731%20(1).png" alt="ちんすこう２袋　月桃茶セット">
+                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('images/slides/IMG_0731%20(1).png', 'ちんすこう２袋 月桃茶セット', '1,200円（税込）', '')">
+                        <img src="images/slides/IMG_0731%20(1).png" alt="ちんすこう２袋　月桃茶セット">
                         <div class="product-card-content flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">ちんすこう２袋　月桃茶セット</h3>
                             <p class="text-lg font-bold text-gray-900">1,200円（税込）</p>
                         </div>
                     </div>
                     <!-- Set Item 3 -->
-                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('IMG_0293.JPG', 'ちんすこう8袋', '3,400円（税込）', '')">
-                        <img src="IMG_0293.JPG" alt="ちんすこう8袋">
+                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('images/products/IMG_0293.JPG', 'ちんすこう8袋', '3,400円（税込）', '')">
+                        <img src="images/products/IMG_0293.JPG" alt="ちんすこう8袋">
                         <div class="product-card-content flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">ちんすこう8袋</h3>
                             <p class="text-lg font-bold text-gray-900">3,400円（税込）</p>
                         </div>
                     </div>
                     <!-- Set Item 4 -->
-                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('IMG_0292.JPG', '月桃茶ちんすこう6袋', '2,550円（税込）', '')">
-                        <img src="IMG_0292.JPG" alt="月桃茶ちんすこう6袋">
+                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('images/products/IMG_0292.JPG', '月桃茶ちんすこう6袋', '2,550円（税込）', '')">
+                        <img src="images/products/IMG_0292.JPG" alt="月桃茶ちんすこう6袋">
                         <div class="product-card-content flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">月桃茶ちんすこう6袋</h3>
                             <p class="text-lg font-bold text-gray-900">2,550円（税込）</p>
                         </div>
                     </div>
                     <!-- Set Item 5 -->
-                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('DSCF2544.jpg', 'ちんすこう菊型セット', '', '')">
-                        <img src="DSCF2544.jpg" alt="ちんすこう菊型セット">
+                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('images/products/DSCF2544.jpg', 'ちんすこう菊型セット', '', '')">
+                        <img src="images/products/DSCF2544.jpg" alt="ちんすこう菊型セット">
                         <div class="product-card-content flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">ちんすこう菊型セット</h3>
                         </div>
                     </div>
                     <!-- Set Item 6 -->
-                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('DSCF2541.jpg', '菊型セット', '', '')">
-                        <img src="DSCF2541.jpg" alt="菊型セット">
+                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('images/products/DSCF2541.jpg', '菊型セット', '', '')">
+                        <img src="images/products/DSCF2541.jpg" alt="菊型セット">
                         <div class="product-card-content flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">菊型セット</h3>
                         </div>
@@ -246,16 +245,16 @@
                 <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mt-16 mb-10 sm:mb-12 scroll-reveal">その他</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 scroll-reveal delay-100">
                     <!-- Other Item 1 -->
-                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('DSCF2554.jpg', '月桃茶', '400円（税込）', '')">
-                        <img src="DSCF2554.jpg" alt="月桃茶">
+                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('images/products/DSCF2554.jpg', '月桃茶', '400円（税込）', '')">
+                        <img src="images/products/DSCF2554.jpg" alt="月桃茶">
                         <div class="product-card-content flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">月桃茶</h3>
                             <p class="text-lg font-bold text-gray-900">400円（税込）</p>
                         </div>
                     </div>
                     <!-- Other Item 2 -->
-                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('IMG_0775.png', 'シャツ', '2800円（税込）', 'サイズ：S M L XL')">
-                        <img src="IMG_0775.png" alt="その他商品2">
+                    <div class="product-card-frame flex flex-col h-full cursor-pointer" onclick="openModal('images/products/IMG_0775.png', 'シャツ', '2800円（税込）', 'サイズ：S M L XL')">
+                        <img src="images/products/IMG_0775.png" alt="その他商品2">
                         <div class="product-card-content flex flex-col flex-grow">
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">シャツ</h3>
                             <p class="text-lg font-bold text-gray-900">2800円（税込）</p>
@@ -284,7 +283,7 @@
                             <p><strong>営業時間:</strong> 10:30〜14:00、15:00〜18:30</p>
                             <p><strong>定休日:</strong> 不定休（詳細はInstagramをご覧ください）</p>
                         </div>
-                        <img src="IMG_0764.png" alt="国際通り牧志店の外観" class="w-full mt-4">
+                        <img src="images/IMG_0764.png" alt="国際通り牧志店の外観" class="w-full mt-4">
                     </div>
                     <div class="bg-white p-6 shadow-md">
                         <h3 class="text-2xl font-semibold text-orange-600 mb-3">国際通り松尾店</h3>
@@ -292,7 +291,7 @@
                             <p><strong>住所:</strong> 沖縄県那覇市松尾１丁目２−３−１</p><br><br>
                             <p>製造場となり販売はしておりません。お買い求めは牧志店へお越しください</p>
                         </div>
-                        <img src="photos/IMG_0713.png" alt="国際通り松尾店の外観" class="w-full mt-4">
+                        <img src="images/IMG_0713.png" alt="国際通り松尾店の外観" class="w-full mt-4">
                     </div>
                 </div>
             </div>
@@ -451,7 +450,7 @@
                         <h3 class="text-xl font-semibold text-orange-600 mb-6">公式SNS / お問い合わせ用QRコード</h3>
                         <a href="https://www.instagram.com/arakakichinsuko?igsh=emZqMnh0ZjZ0Zmts&utm_source=qr" target="_blank" rel="noopener noreferrer" class="block hover:opacity-90 transition-opacity duration-300">
                             <div class="product-card-frame" style="width: 240px; height: 240px;">
-                                <img src="IMG_0247.jpg" alt="QRコード" class="w-full h-full object-contain"
+                                <img src="images/IMG_0247.jpg" alt="QRコード" class="w-full h-full object-contain"
                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                                 <div
                                     class="hidden w-full h-full items-center justify-center bg-gray-50 text-gray-400 text-sm text-center p-4">
